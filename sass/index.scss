@@ -77,63 +77,17 @@
 		.banner-heading {
 			font-size: map-get($main, largeSize);
 			color: map-get($nav, whiteColor0);
-			@include animation('fadeAndShow .8s ease .6s both');
-			animation-delay: .7s;
 			font-family: 'Merriweather', serif;
 		}
 		.banner-sub-heading {
 			color: map-get($nav, subColor);
-			@include animation('fadeAndShow .8s ease .6s both');
-			animation-delay: .8s;
 			line-height: map-get($main, largeSize);
 		}
 		.banner-btn {
 			@extend .nav-btn;
 			font-size: map-get($main, smallSize);
 			@include reset;
-			@include animation('fadeAndShow .8s ease .6s both');
-			animation-delay: .9s;
 		}
-	}
-}
-
-
-/* Fade and show part */
-
-.fadeInRight {
-	@include animation('fadeInRight .8s ease .6s both');
-}
-
-.fadeInLeft {
-	@include animation('fadeInLeft .8s ease .6s both');
-}
-
-@include keyframes(fadeInRight) {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-@include keyframes(fadeAndShow) {
-	from {
-		opacity: 0;
-		@include transform( translate3d(0, 100%, 0));
-	}
-	to {
-		opacity: 1;
-		@include transform( translate3d(0, 0, 0));
-	}
-}
-
-@include keyframes(fadeInLeft) {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
 	}
 }
 
@@ -141,7 +95,6 @@
 /*Figure control*/
 
 .img-control {
-	animation-delay: .7s;
 	.card {
 		background-color: transparent;
 		@include reset;
@@ -281,7 +234,6 @@
 /*Clients*/
 
 .sponsor {
-	animation-delay: .95s;
 	margin: map-get($main, largeSize)*5 0;
 	.links {
 		border: 1px solid #696f8294;
@@ -317,12 +269,6 @@
 	}
 	.contents {
 		border-bottom: 1px solid #696f8294;
-		@for $i from 1 through 6 {
-			 :nth-child(#{$i}) {
-				$new: .2 * $i;
-				animation-delay: #{$new}s;
-			}
-		}
 	}
 }
 
@@ -391,22 +337,15 @@
 }
 
 .sales {
-	@for $i from 1 through 3 {
-		.pay:nth-child(#{$i}) {
-			$new2: .2 * $i;
-			animation-delay: #{$new2}s;
-		}
-	}
 	.galary-heading {
 		font-size: map-get($main, largeSize);
 		color: map-get($nav, whiteColor0);
 		font-family: 'Merriweather', serif;
-		animation-delay: .7s;
+		animation-duration: .9s;
 	}
 	.galary-sub-heading {
 		color: map-get($nav, subColor);
 		line-height: map-get($main, largeSize);
-		animation-delay: .8s;
 	}
 }
 
@@ -415,7 +354,7 @@
 
 @media (min-width: 576px) {
 	.modal-dialog {
-		max-width: initial;
+		max-width: auto;
 		margin: 1.75rem auto;
 	}
 }
@@ -486,6 +425,7 @@ input:checked+.slider:before {
 }
 
 .pay {
+	animation-duration: .9s;
 	.pay-content {
 		background-color: map-get($fig, backlight);
 	}
@@ -548,6 +488,7 @@ input:checked+.slider:before {
 /*Adverisment*/
 
 .ads {
+	animation-duration: .9s;
 	.ads-heading {
 		color: map-get($nav, whiteColor0);
 		font-size: map-get($main, largeSize);
@@ -638,5 +579,11 @@ input:checked+.slider:before {
 @media (max-width: 767.98px) {
 	 :root {
 		font-size: 12px;
+	}
+	.ads-heading {
+		display: none;
+	}
+	.ads-btn {
+		margin: auto;
 	}
 }

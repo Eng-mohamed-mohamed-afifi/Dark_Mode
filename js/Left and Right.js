@@ -1,4 +1,4 @@
-function Utils() {}
+/* function Utils() {}
         Utils.prototype = {
             constructor: Utils,
             isElementInView: function (element, fullyInView) {
@@ -37,4 +37,8 @@ function addFadeIn(repeat) {
                     $(this).removeClass('toLeft');
                 }
             });
-        }
+        } */
+        let spinnerWrapper = document.querySelector('.spinner-wrapper');
+        window.addEventListener('load',function(){
+        spinnerWrapper.style.display = 'none';    
+        })

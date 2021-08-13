@@ -105,38 +105,12 @@
 .cube-page .banner .banner-heading {
   font-size: 2rem;
   color: #dde2f4;
-  -webkit-animation: fadeAndShow .8s ease .6s both;
-  animation: fadeAndShow .8s ease .6s both;
-  -webkit-animation-delay: .7s;
-          animation-delay: .7s;
   font-family: 'Merriweather', serif;
-}
-
-@media (prefers-reduced-motion) {
-  .cube-page .banner .banner-heading .animated {
-    -webkit-animation: unset !important;
-    animation: unset !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
 }
 
 .cube-page .banner .banner-sub-heading {
   color: #99A1BA;
-  -webkit-animation: fadeAndShow .8s ease .6s both;
-  animation: fadeAndShow .8s ease .6s both;
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
   line-height: 2rem;
-}
-
-@media (prefers-reduced-motion) {
-  .cube-page .banner .banner-sub-heading .animated {
-    -webkit-animation: unset !important;
-    animation: unset !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
 }
 
 .cube-page .banner .banner-btn {
@@ -145,118 +119,9 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
-  -webkit-animation: fadeAndShow .8s ease .6s both;
-  animation: fadeAndShow .8s ease .6s both;
-  -webkit-animation-delay: .9s;
-          animation-delay: .9s;
-}
-
-@media (prefers-reduced-motion) {
-  .cube-page .banner .banner-btn .animated {
-    -webkit-animation: unset !important;
-    animation: unset !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
-}
-
-/* Fade and show part */
-.fadeInRight {
-  -webkit-animation: fadeInRight .8s ease .6s both;
-  animation: fadeInRight .8s ease .6s both;
-}
-
-@media (prefers-reduced-motion) {
-  .fadeInRight .animated {
-    -webkit-animation: unset !important;
-    animation: unset !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
-}
-
-.fadeInLeft {
-  -webkit-animation: fadeInLeft .8s ease .6s both;
-  animation: fadeInLeft .8s ease .6s both;
-}
-
-@media (prefers-reduced-motion) {
-  .fadeInLeft .animated {
-    -webkit-animation: unset !important;
-    animation: unset !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
-}
-
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeAndShow {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeAndShow {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /*Figure control*/
-.img-control {
-  -webkit-animation-delay: .7s;
-          animation-delay: .7s;
-}
-
 .img-control .card {
   background-color: transparent;
   outline: none;
@@ -472,8 +337,6 @@
 
 /*Clients*/
 .sponsor {
-  -webkit-animation-delay: .95s;
-          animation-delay: .95s;
   margin: 10rem 0;
 }
 
@@ -508,36 +371,6 @@
 
 .features .contents {
   border-bottom: 1px solid #696f8294;
-}
-
-.features .contents :nth-child(1) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.features .contents :nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.features .contents :nth-child(3) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.features .contents :nth-child(4) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.features .contents :nth-child(5) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.features .contents :nth-child(6) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
 }
 
 .media .bor {
@@ -622,40 +455,23 @@
   line-height: 2rem;
 }
 
-.sales .pay:nth-child(1) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.sales .pay:nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.sales .pay:nth-child(3) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
 .sales .galary-heading {
   font-size: 2rem;
   color: #dde2f4;
   font-family: 'Merriweather', serif;
-  -webkit-animation-delay: .7s;
-          animation-delay: .7s;
+  -webkit-animation-duration: .9s;
+          animation-duration: .9s;
 }
 
 .sales .galary-sub-heading {
   color: #99A1BA;
   line-height: 2rem;
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
 }
 
 /*pop-up*/
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: initial;
+    max-width: auto;
     margin: 1.75rem auto;
   }
 }
@@ -719,6 +535,11 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.pay {
+  -webkit-animation-duration: .9s;
+          animation-duration: .9s;
 }
 
 .pay .pay-content {
@@ -793,6 +614,11 @@ input:checked + .slider:before {
 }
 
 /*Adverisment*/
+.ads {
+  -webkit-animation-duration: .9s;
+          animation-duration: .9s;
+}
+
 .ads .ads-heading {
   color: #dde2f4;
   font-size: 2rem;
@@ -898,6 +724,12 @@ input:checked + .slider:before {
 @media (max-width: 767.98px) {
   :root {
     font-size: 12px;
+  }
+  .ads-heading {
+    display: none;
+  }
+  .ads-btn {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=index.css.map */
