@@ -468,10 +468,16 @@
   line-height: 2rem;
 }
 
+.modal {
+  width: 100%;
+}
+
 /*pop-up*/
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: auto;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
     margin: 1.75rem auto;
   }
 }
