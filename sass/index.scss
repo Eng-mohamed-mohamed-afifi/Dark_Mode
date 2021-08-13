@@ -1,8 +1,9 @@
 @import "vars",
 "reset";
-
 /*Scroll bar*/
-
+body{
+	background-color: map-get($main,mainColor);
+}
 ::-webkit-scrollbar {
 	width: map-get($nav, midSize);
 }
@@ -13,7 +14,7 @@
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
-	box-shadow: inset 0 0 10px rgba(0, 0, 0, .25);
+	box-shadow: inset 0 0 10px rgba(250, 247, 247, 0.938);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -357,6 +358,7 @@
 @media (min-width: 576px) {
 	.modal-dialog {
 		max-width: fit-content;
+		width: fit-content;
 		margin: 1.75rem auto;
 	}
 }
@@ -579,7 +581,10 @@ input:checked+.slider:before {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-	 :root {
+	 
+}
+@media (max-width: 575.98px) { 
+	:root {
 		font-size: 12px;
 	}
 	.ads-heading {
@@ -588,4 +593,30 @@ input:checked+.slider:before {
 	.ads-btn {
 		margin: auto;
 	}
-}
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	:root {
+		font-size: 12px;
+	}
+	.ads-heading {
+		display: none;
+	}
+	.ads-btn {
+		margin: auto;
+	}
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	:root {
+		font-size: 12px;
+	}
+	.ads-heading {
+		display: none;
+	}
+	.ads-btn {
+		margin: auto;
+	}
+ }
